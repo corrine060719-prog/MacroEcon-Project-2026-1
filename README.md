@@ -105,7 +105,7 @@ $$\sigma_t^{(10)} = \sqrt{\frac{1}{9} \sum_{s=t-9}^{t} \left(g_s - \bar{g}_{[t-9
 #### 3.2 HP Filter — Business Cycle Decomposition
 The Hodrick–Prescott (1997) filter decomposes log-level real GDP $y_t$ into trend $\tau_t$ and cycle $c_t$:
 
-$$\min_{\{\tau_t\}} \left\{ \sum_{t=1}^{T}(y_t - \tau_t)^2 + \lambda \sum_{t=2}^{T-1}\left[(\tau_{t+1} - \tau_t) - (\tau_t - \tau_{t-1})\right]^2 \right\}$$
+$$\min_{\{\tau_t\}} \left\lbrace \sum_{t=1}^{T}(y_t - \tau_t)^2 + \lambda \sum_{t=2}^{T-1}\left[(\tau_{t+1} - \tau_t) - (\tau_t - \tau_{t-1})\right]^2 \right\rbrace$$
 
 Annual data: $\lambda = 100$ (Ravn & Uhlig, 2002). Business cycle synchronisation is measured via Pearson correlation of the two cyclical series.
 
